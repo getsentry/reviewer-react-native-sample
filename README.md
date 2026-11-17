@@ -1,6 +1,6 @@
-# React Native sample for Review Queue
+# React Native sample for Sheepdog
 
-This is a small [Expo](https://expo.dev) app that uses the [Sentry React Native SDK](https://docs.sentry.io/platforms/react-native/). It is a test repository for the Review Queue auto-reviewer. Its pull requests show how the reviewer sorts changes with low and high risk.
+This is a small [Expo](https://expo.dev) app that uses the [Sentry React Native SDK](https://docs.sentry.io/platforms/react-native/). It is a test repository for the Sheepdog auto-reviewer. Its pull requests show how the reviewer sorts changes with low and high risk.
 
 ## Run
 
@@ -22,4 +22,4 @@ npm test
 
 ## Review rules
 
-`.github/review-queue.yml` tells the Review Queue server which pull requests it can approve and merge without a careful human review. The server reads the file from the base branch of each pull request, so a pull request cannot change the rules for itself. `AGENTS.md` has the instructions that the AI review and the classification use.
+`.github/sheepdog.yml` tells the Sheepdog server which pull requests it can approve and merge without a careful human review. The server reads the file from the base branch of each pull request, so a pull request cannot change the rules for itself. `AGENTS.md` has the instructions that the AI review and the classification use.

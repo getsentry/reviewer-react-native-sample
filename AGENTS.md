@@ -1,6 +1,6 @@
 # AGENTS.md
 
-A small Expo app that uses the Sentry React Native SDK. The repository is a test bed for the Review Queue auto-reviewer, so its pull requests are small and on purpose cover different levels of risk.
+A small Expo app that uses the Sentry React Native SDK. The repository is a test bed for the Sheepdog auto-reviewer, so its pull requests are small and on purpose cover different levels of risk.
 
 ## Layout
 

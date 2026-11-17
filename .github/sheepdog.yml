@@ -1,4 +1,4 @@
-# Rules for the Review Queue auto-reviewer. The server reads this file from the base branch of each pull request.
+# Rules for the Sheepdog auto-reviewer. The server reads this file from the base branch of each pull request.
 # A pull request goes to the first lane whose conditions all match. Every other pull request needs a manual review.
 # max_score is the highest classification score (1 to 10) that the lane accepts. The model can only move a pull request to a stricter lane.
 version: 1
