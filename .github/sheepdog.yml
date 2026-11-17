@@ -5,7 +5,7 @@ version: 1
 
 lanes:
   safe:
-    authors: [dependabot[bot]]
+    authors: ["dependabot[bot]"]
     paths: ["package.json", "package-lock.json"]
     max_changed_lines: 50
     max_score: 2
