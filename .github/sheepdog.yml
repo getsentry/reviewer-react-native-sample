@@ -5,9 +5,11 @@ version: 1
 
 # Every classification of this repository uses this model: the Classify button in the app and the CI workflow.
 # ci: true lets the server use the score from .github/workflows/sheepdog.yml.
+# comment: true lets that workflow post the score as a comment on the pull request.
 classification:
   model: anthropic/claude-sonnet-5.5
   ci: true
+  comment: true
 
 lanes:
   safe:
