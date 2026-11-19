@@ -18,6 +18,6 @@ jobs:
     name: Sheepdog classification
     runs-on: ubuntu-latest
     steps:
-      - uses: getsentry/sheepdog/ci@d3d7988d3fa8c3dfaf46b953b829ac0e827c699b
+      - uses: getsentry/sheepdog/ci@c1f9ec86daa10ec464064ec1d38d6c9a924ec941
         with:
           openrouter-api-key: ${{ secrets.OPENROUTER_API_KEY }}
