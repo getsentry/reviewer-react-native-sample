@@ -1,0 +1,23 @@
+name: Sheepdog
+
+# pull_request_target runs this file from the base branch, so a pull request cannot change it.
+# The job never checks out or runs the code of the pull request.
+on:
+  pull_request_target:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: sheepdog-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  classify:
+    name: Sheepdog classification
+    runs-on: ubuntu-latest
+    steps:
+      - uses: getsentry/sheepdog/ci@f2927cdd189e26a1fda492ff802c0646e9eddbb1
+        with:
+          openrouter-api-key: ${{ secrets.OPENROUTER_API_KEY }}

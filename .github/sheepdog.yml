@@ -3,6 +3,12 @@
 # max_score is the highest classification score (1 to 10) that the lane accepts. The model can only move a pull request to a stricter lane.
 version: 1
 
+# Every classification of this repository uses this model: the Classify button in the app and the CI workflow.
+# ci: true lets the server use the score from .github/workflows/sheepdog.yml.
+classification:
+  model: anthropic/claude-sonnet-5.5
+  ci: true
+
 lanes:
   safe:
     authors: ["dependabot[bot]"]
