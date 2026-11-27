@@ -11,6 +11,11 @@ classification:
   ci: true
   comment: true
 
+# Each AI review in the Sheepdog web app uses the default model of the user, because review.model is not set.
+# comment: true shows a "Post to GitHub" button on a review, which posts it with a comment on the line of each finding.
+review:
+  comment: true
+
 lanes:
   safe:
     authors: ["dependabot[bot]"]
