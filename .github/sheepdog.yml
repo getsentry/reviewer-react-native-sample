@@ -11,9 +11,10 @@ classification:
   ci: true
   comment: true
 
-# Each AI review in the Sheepdog web app uses the default model of the user, because review.model is not set.
+# Every AI review in the Sheepdog web app uses this model, also an auto review. Classification keeps its own model above.
 # comment: true shows a "Post to GitHub" button on a review, which posts it with a comment on the line of each finding.
 review:
+  model: deepseek/deepseek-v4.1-flash-1017
   comment: true
 
 lanes:
